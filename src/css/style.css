@@ -1,0 +1,35 @@
+body {
+    font-family: 'Noto-sans', sans-serif;
+}
+
+
+.site-header .header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 20px;
+    background-color: brown;
+}
+
+.site-header .header-container .main-nav .nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.site-header .header-container .main-nav .nav-list .nav-item {
+    color: rgb(253, 183, 26);
+    
+}
+
+.site-main .cart-sidebar {
+    display: none;
+}
+
+.site-main .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px;
+    margin: 40px 20px;
+    justify-content: center;
+}
