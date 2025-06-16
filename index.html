@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UHJE e-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <h1 class="site-logo">MyStore</h1>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#products">Products</a></li>
+            <li class="nav-item">
+              <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section id="products" class="product-list">
+        <article
+          class="product-card"
+          data-id="1"
+          data-name="product A"
+          data-price="100"
+        >
+          <img src="placeholder.jpg" alt="Produto A" class="product-image" />
+          <h2 class="product-title">Produto A</h2>
+          <p class="product-price">R$100</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </article>
+      </section>
+
+      <aside id="cart" class="cart-sidebar">
+        <h2 class="cart-title">Your Cart</h2>
+        <ul class="cart-items" id="cart-items"></ul>
+        <div class="cart-summary">
+          <p>Total: R$<span id="cart-total">0</span></p>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 UHJE. All rights reserved.</p>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
