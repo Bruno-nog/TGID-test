@@ -47,14 +47,17 @@
   justify-content: center;
 }
 
-.image.left {
+.image.cat {
   background-image: url('../images/cat.jpg');
 }
-
-.image.right {
+  
+.image.calopsita {
   background-image: url('../images/calopsita.jpg');
 }
 
+.image.dog {
+  background-image: url('../images/dog.webp');
+}
 .item, .image {
   flex: 1;
   max-width: 50%;

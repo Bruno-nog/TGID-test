@@ -33,11 +33,8 @@
               <span class="hamburger"></span>
             </div>
           </label>
-
           <ul>
-            <li><a href="#products">products</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#projects">projects</a></li>
+            <li><a class="addcart" href="#"><img src="./src/images/addcart.png" alt="add to cart"></a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
@@ -46,16 +43,24 @@
     <section class="brand">
       <h2>Tudo para seu pet, num clique.</h2>
     </section>
+    <section class="guide-cart">
+      <h2>Escolher pet:</h2>
+      <ul class="animals">
+        <li><a class="animal" href="#gato">Gato</a></li>
+        <li><a class="animal" href="#calopsita">Calopsita</a></li>
+        <li><a class="animal" href="#cachorro">Cachorro</a></li>
+      </ul>
+    </section>
     <section class="products" id="products">
       <div class="product-row">
-        <div class="image left"></div>
-        <div class="item">
+        <div class="image left cat"></div>
+        <div class="item" id="gato">
           <img
             src="./src/images/cat-cart.webp"
-            alt="Ração para cães"
+            alt="Ração para gatos"
             class="item-image"
           />
-          <h3 class="item-title">Ração Premium para Cães Adultos 10kg</h3>
+          <h3 class="item-title">Ração Premium para gatos Adultos 10kg</h3>
           <p class="item-price">R$ 149,90</p>
           <div class="item-actions">
             <button class="btn-add-cart">Adicionar ao Carrinho</button>
@@ -64,7 +69,7 @@
       </div>
 
       <div class="product-row">
-        <div class="item">
+        <div class="item" id="calopsita">
           <img
             src="./src/images/racao-calopsita.webp"
             alt="Ração para calopsitas"
@@ -76,68 +81,29 @@
             <button class="btn-add-cart">Adicionar ao Carrinho</button>
           </div>
         </div>
-        <div class="image right"></div>
+        <div class="image right calopsita"></div>
+      </div>
+      <div class="product-row">
+        <div class="image left dog"></div>
+        <div class="item" id="cachorro">
+          <img
+            src="./src/images/racaodog.webp"
+            alt="Ração para cães"
+            class="item-image"
+          />
+          <h3 class="item-title">Ração Premium para Cães Adultos 10kg</h3>
+          <p class="item-price">R$ 119,90</p>
+          <div class="item-actions">
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="services" id="services">
-      <div class="service">
-        <img src="./src/images/bolinha1.png" alt="bolinha 2" />
-        <div class="service-info">
-          <h3>SEO</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-            aspernatur accusamus quaerat, cum veniam libero, amet dolorem earum
-            corporis voluptatibus perspiciatis, maxime eaque nemo. Ullam
-            aspernatur beatae quas reprehenderit deleniti!
-          </p>
-        </div>
-      </div>
-      <div class="service">
-        <img src="./src/images/bolinha2.png" alt="bolinha 2" />
-        <div class="service-info">
-          <h3>Landing Page</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-            aspernatur accusamus quaerat, cum veniam libero, amet dolorem earum
-            corporis voluptatibus perspiciatis, maxime eaque nemo. Ullam
-            aspernatur beatae quas reprehenderit deleniti!
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="projects" id="projects">
-      <div class="project">
-        <a href="">
-          <img src="./src/images/tomatoes.jpg" alt="tomatoes" />
-        </a>
-      </div>
-      <div class="project">
-        <a href="">
-          <img src="./src/images/landscape.jpg" alt="landscape" />
-        </a>
-      </div>
-      <div class="project">
-        <a href="">
-          <img src="./src/images/plants3.jpg" alt="plants" />
-        </a>
-      </div>
-      <div class="project">
-        <a href="">
-          <img src="./src/images/flowers.jpg" alt="flowers" />
-        </a>
-      </div>
-    </section>
     <footer class="footer" id="contact">
-      <h4>Agência XYZ</h4>
+      <h4>TGID - Teste Técnico Frontend</h4>
 
-      <nav>
-        <ul>
-          <li><a href="#products">products</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </nav>
+      <h5>Feito por Bruno N de Queiroz.</h5>
 
       <div class="social">
         <a href=""><i class="fab fa-facebook-square"></i></a>
