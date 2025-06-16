@@ -12,7 +12,7 @@ body {
                         "projects projects projects projects"
                         "footer footer footer footer";
                         grid-template-columns: repeat(4, 1fr);
-                        font-family: 'Roboto', sans-serif;
+                        font-family: 'Noto-sans', sans-serif;
                         font-size: 1.6rem;
                         font-weight: 400;
 }
