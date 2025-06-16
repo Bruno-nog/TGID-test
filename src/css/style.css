@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #eeeae5fd;
+    background-color: #b0ee93;
     display: grid;
     grid-template-areas: "header header header header"
                         "brand brand brand brand "
@@ -23,7 +23,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #eeeae5fd;
+  background-color: #f0f0f0;
   transition: all 0.3s ease;
 }
 
