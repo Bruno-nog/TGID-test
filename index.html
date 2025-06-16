@@ -3,58 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UHJE e-commerce</title>
+    <title>Ipet - teste técnico</title>
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/products.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link rel="stylesheet" href="./src/css/menu.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto:wght@100;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/css/font-awesome.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="header">
       <div class="header-container">
-        <h1 class="site-logo">MyStore</h1>
-        <nav class="main-nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#products">Products</a></li>
-            <li class="nav-item">
-              <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
-            </li>
+        <a href="/">
+          <h1 class="logo">Ipet</h1>
+        </a>
+        <nav>
+          <input type="checkbox" id="menu-hamburger" />
+
+          <label for="menu-hamburger">
+            <div class="menu">
+              <span class="hamburger"></span>
+            </div>
+          </label>
+
+          <ul>
+            <li><a href="#products">products</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
-    <main class="site-main">
-      <section id="products" class="product-list">
-        <article
-          class="product-card"
-          data-id="1"
-          data-name="product A"
-          data-price="100"
-        >
-          <img src="placeholder.jpg" alt="Produto A" class="product-image" />
-          <h2 class="product-title">Produto A</h2>
-          <p class="product-price">R$100</p>
-          <button class="add-to-cart-btn">Add to Cart</button>
-        </article>
-      </section>
-
-      <aside id="cart" class="cart-sidebar">
-        <h2 class="cart-title">Your Cart</h2>
-        <ul class="cart-items" id="cart-items"></ul>
-        <div class="cart-summary">
-          <p>Total: R$<span id="cart-total">0</span></p>
-          <button class="checkout-btn">Checkout</button>
+    <section class="brand">
+      <h2>Tudo para seu pet, num clique.</h2>
+    </section>
+    <section class="products" id="products">
+      <div class="product-row">
+        <div class="image left"></div>
+        <div class="item">
+          <img
+            src="./src/images/cat-cart.webp"
+            alt="Ração para cães"
+            class="item-image"
+          />
+          <h3 class="item-title">Ração Premium para Cães Adultos 10kg</h3>
+          <p class="item-price">R$ 149,90</p>
+          <div class="item-actions">
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
         </div>
-      </aside>
-    </main>
+      </div>
 
-    <footer class="site-footer">
-      <p>&copy; 2025 UHJE. All rights reserved.</p>
+      <div class="product-row">
+        <div class="item">
+          <img
+            src="./src/images/racao-calopsita.webp"
+            alt="Ração para calopsitas"
+            class="item-image"
+          />
+          <h3 class="item-title">Ração Premium para Calopsitas 1kg</h3>
+          <p class="item-price">R$ 49,90</p>
+          <div class="item-actions">
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="image right"></div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="service">
+        <img src="./src/images/bolinha1.png" alt="bolinha 2" />
+        <div class="service-info">
+          <h3>SEO</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+            aspernatur accusamus quaerat, cum veniam libero, amet dolorem earum
+            corporis voluptatibus perspiciatis, maxime eaque nemo. Ullam
+            aspernatur beatae quas reprehenderit deleniti!
+          </p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="./src/images/bolinha2.png" alt="bolinha 2" />
+        <div class="service-info">
+          <h3>Landing Page</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+            aspernatur accusamus quaerat, cum veniam libero, amet dolorem earum
+            corporis voluptatibus perspiciatis, maxime eaque nemo. Ullam
+            aspernatur beatae quas reprehenderit deleniti!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="project">
+        <a href="">
+          <img src="./src/images/tomatoes.jpg" alt="tomatoes" />
+        </a>
+      </div>
+      <div class="project">
+        <a href="">
+          <img src="./src/images/landscape.jpg" alt="landscape" />
+        </a>
+      </div>
+      <div class="project">
+        <a href="">
+          <img src="./src/images/plants3.jpg" alt="plants" />
+        </a>
+      </div>
+      <div class="project">
+        <a href="">
+          <img src="./src/images/flowers.jpg" alt="flowers" />
+        </a>
+      </div>
+    </section>
+    <footer class="footer" id="contact">
+      <h4>Agência XYZ</h4>
+
+      <nav>
+        <ul>
+          <li><a href="#products">products</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+
+      <div class="social">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-pinterest"></i></a>
+      </div>
     </footer>
-
-    <script src="./src/js/script.js"></script>
   </body>
 </html>
