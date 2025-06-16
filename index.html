@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/products.css" />
-    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link rel="stylesheet" href="./src/css/cart.css">
     <link rel="stylesheet" href="./src/css/menu.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto:wght@100;400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/logo-ipet-resized.png"
+      type="image/x-icon"
     />
     <link rel="stylesheet" href="./src/css/font-awesome.css" />
   </head>
@@ -27,19 +33,26 @@
         </a>
         <nav>
           <input type="checkbox" id="menu-hamburger" />
-
           <label for="menu-hamburger">
             <div class="menu">
               <span class="hamburger"></span>
             </div>
           </label>
           <ul>
-            <li><a class="addcart" href="#"><img src="./src/images/addcart.png" alt="add to cart"></a></li>
+            <li>
+              <button class="addcart">
+                <img src="./src/images/addcart.png" alt="add to cart" />
+              </button>
+            </li>
             <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <aside class="cart-sidebar" id="cart">
+      <h2>Carrinho de Compras</h2>
+      <p>Seu carrinho está vazio!</p>
+    </aside>
     <section class="brand">
       <h2>Tudo para seu pet, num clique.</h2>
     </section>
@@ -75,8 +88,8 @@
             alt="Ração para calopsitas"
             class="item-image"
           />
-          <h3 class="item-title">Ração Premium para Calopsitas 1kg</h3>
-          <p class="item-price">R$ 49,90</p>
+          <h3 class="item-title">Ração  para Calopsitas 1kg</h3>
+          <p class="item-price">R$ 9,90</p>
           <div class="item-actions">
             <button class="btn-add-cart">Adicionar ao Carrinho</button>
           </div>
@@ -104,13 +117,21 @@
       <h4>TGID - Teste Técnico Frontend</h4>
 
       <h5>Feito por Bruno N de Queiroz.</h5>
-      
-      <div class="social">
-        <a href="https://github.com/Bruno-nog" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/bruno.ndq/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/bruno-nogueira-de-queiroz-a9667a2a6/" target="_blank"><i class="fab fa-linkedin"></i></a>
 
+      <div class="social">
+        <a href="https://github.com/Bruno-nog" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/bruno.ndq/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/bruno-nogueira-de-queiroz-a9667a2a6/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
       </div>
     </footer>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>

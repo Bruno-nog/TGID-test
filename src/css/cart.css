@@ -1,0 +1,17 @@
+.cart-sidebar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 500;
+  height: 90%;
+  background-color: aqua;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  padding: 50px 10px;
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+}
+
+.cart-sidebar.show {
+  transform: translateX(0);
+}

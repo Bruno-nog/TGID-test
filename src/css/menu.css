@@ -2,7 +2,9 @@
     display: flex;
 }
 
-.header nav ul li a {
+.header nav ul li a,
+.header nav ul li .addcart {
+    cursor: pointer;
     font-size: 2rem;
     padding: 10px 25px;
     font-weight: 500;
@@ -10,7 +12,9 @@
     transition: 0.3s ease-in-out ;
 }
 
-.header nav ul li a:hover {
+.header nav ul li a:hover,
+.header nav ul li .addcart:hover
+{
     color: #ffffff;
     background-color: #2E7D32;
 }
@@ -28,7 +32,6 @@
   width: 40px;
   height: 40px;
 }
-
 
 /* RESPONSIVE */
 
