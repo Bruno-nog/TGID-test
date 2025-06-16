@@ -31,7 +31,7 @@ function addToCart(product)
 
 function renderCart()
 {
-    cartSideBar.innerHTML = '<h2>Carrinho de Compras</h2>';
+    cartSideBar.innerHTML = '<h2 class="buy-cart">Carrinho de Compras</h2>';
 
     if (cart.lenght === 0)
     {
@@ -49,7 +49,18 @@ function renderCart()
         </div>`;
         cartSideBar.innerHTML += itemHTML;
     })
+    const total = calculateTotal().toFixed(2).replace('.', ',');
+    cartSideBar.innerHTML += `
+    <div class="cart-total">
+        <h3>Total:<b> R$ ${total}</b></h3>
+    </div>`;
+}
 
+function calculateTotal() {
+    return cart.reduce((total, item) => {
+        const price = parseFloat(item.price.replace(',', '.'));
+        return total + price * item.quantity;
+    }, 0);
 }
 
 btnCart.addEventListener('click', function(){

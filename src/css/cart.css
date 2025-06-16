@@ -17,6 +17,11 @@
     text-align: center;
 }
 
+.cart-sidebar .buy-cart
+{
+    text-align: center;
+}
+
 .cart-sidebar .cart-item {
     display: flex;
     align-items: center;
@@ -27,6 +32,16 @@
 .cart-sidebar .cart-item-image
 {
     width: 40%;
+}
+
+.cart-sidebar .cart-total {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+
+.cart-sidebar .cart-total h3 {
+    font-weight: 600;
 }
 
 .cart-sidebar.show {
