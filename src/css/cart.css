@@ -44,6 +44,12 @@
     font-weight: 600;
 }
 
+.cart-item .cart-item-details .cart-item-quantity .increase,
+.cart-item .cart-item-details .cart-item-quantity .decrease {
+    cursor: pointer;
+    padding: 3px;
+}
+
 .cart-sidebar.show {
   transform: translateX(0);
 }
