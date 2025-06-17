@@ -7,7 +7,7 @@
 - [Demo](#demo)
 - [Contato](#contato)
 
-![gif do projeto](./src/images/tgidgi.gifZ)
+![gif do projeto](./src/images/tgidgi.gif)
 
 ## Visão Geral
 
