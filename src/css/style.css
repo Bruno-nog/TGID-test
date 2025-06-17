@@ -70,6 +70,7 @@ body {
     letter-spacing: 3px;
     cursor: default;
     font-size: 4rem;
+    text-align: center;
 } 
 
 @-webkit-keyframes downarrow {

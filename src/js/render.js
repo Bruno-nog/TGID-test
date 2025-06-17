@@ -2,7 +2,9 @@
 function renderCart() {
     if (cart.length === 0) {
     cartSideBar.innerHTML = `
+      <div class="cart-content">
       <p class="empty-cart">Carrinho vazio</p>
+      </div>
     `;
     return;
   }
@@ -15,18 +17,20 @@ function renderCart() {
 
   cart.forEach(item => {
     cartSideBar.innerHTML += `
-      <div class="cart-item" data-id="${item.id}">
-        <img src="${item.image}" alt="${item.name}" class="cart-item-image"/>
-        <div class="cart-item-details">
-          <h4>${item.name}</h4>
-          <p>Preço: R$ ${item.price}</p>
-          <div class="cart-item-quantity">Quant:
-            <button class="decrease">−</button>
-            <span class="cart-item-qty">${item.quantity}</span>
-            <button class="increase">+</button>
-          </div>
+    <div class="cart-items">
+    <div class="cart-item" data-id="${item.id}">
+      <img src="${item.image}" alt="${item.name}" class="cart-item-image"/>
+      <div class="cart-item-details">
+        <h4>${item.name}</h4>
+        <p>Preço: R$ ${item.price}</p>
+        <div class="cart-item-quantity">Quant:
+          <button class="decrease">−</button>
+          <span class="cart-item-qty">${item.quantity}</span>
+          <button class="increase">+</button>
         </div>
       </div>
+    </div>
+    </div>
     `;
   });
 
