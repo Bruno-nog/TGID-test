@@ -24,7 +24,7 @@ O site está muito vinculado ao seu design construído por mim mesmo, com o intu
 
 ## Demo
 
-[Link para a demonstração do projeto](https://bruno-nog.github.io/verificador-email/)
+[Link para a demonstração do projeto](https://bruno-nog.github.io/TGID-test/)
 
 ## Contato
 
